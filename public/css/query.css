@@ -1,0 +1,5 @@
+/* MEDIA QUERYS */
+
+@media (max-width: 767px) {
+  nav.menu_social ul li a{display: block; padding: 10px 10px 10px 10px;color: #aaa;}
+}

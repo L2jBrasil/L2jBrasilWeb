@@ -1,0 +1,39 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background: url(../imagens/background/bg_adem2.png) no-repeat #222;
+	background-size: 100%;
+
+	font-size: 0.9em;
+}
+
+a,p{text-decoration: none;}
+
+
+nav.menu_social{width: 100%; background-color: #333;}
+nav.menu_social ul{width: 80%; margin: 0 auto; list-style: none; }
+nav.menu_social ul li{display: inline-block;}
+nav.menu_social ul li a{display: block; padding: 10px 20px 10px 20px;color: #aaa;}
+nav.menu_social ul li a:hover{background-color: #67528a; color: #fff;}
+
+/* Menu principal do topo */
+nav.menu_top{width: 100%;background-color: #67528a;}
+nav.menu_top ul{width: 80%; margin: 0 auto; list-style: none; }
+nav.menu_top ul li{display: inline-block;}
+nav.menu_top ul li a{display: block; padding: 20px 20px 20px 20px;color: #fff;}
+nav.menu_top ul li a:hover{background-color: #5d4b7c;}
+
+/* Container */
+div.container2{ width: 80%; margin: 0 auto; margin-top: 0px;}
+
+/* tops */
+section.top{width: 100%; margin-top: 400px;}
+div.ranking{ padding: 10px 10px 20px 10px;}
+div.ranking table{width: 100%; background:url(../imagens/background/bg_ranking.png) no-repeat #333; background-size: 100%; padding: 10px;}
+div.ranking table tr th{background-color: #67528a;  padding: 10px; color: #fff;}
+div.ranking table tr td{padding: 10px; margin-top: 5px; color: #aaa;}
+
+/* Content */
