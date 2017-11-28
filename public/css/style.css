@@ -4,36 +4,146 @@
 }
 
 body{
-	background: url(../imagens/background/bg_adem2.png) no-repeat #222;
+	background: url(../imagens/background/bg_adem2.png) no-repeat #14151b;
 	background-size: 100%;
 
 	font-size: 0.9em;
 }
 
 a,p{text-decoration: none;}
+.right{float: right;}
 
-
-nav.menu_social{width: 100%; background-color: #333;}
-nav.menu_social ul{width: 80%; margin: 0 auto; list-style: none; }
+nav.menu_social{background-color: #333;}
+nav.menu_social ul{margin: 0 auto; list-style: none; }
 nav.menu_social ul li{display: inline-block;}
 nav.menu_social ul li a{display: block; padding: 10px 20px 10px 20px;color: #aaa;}
 nav.menu_social ul li a:hover{background-color: #67528a; color: #fff;}
 
 /* Menu principal do topo */
-nav.menu_top{width: 100%;background-color: #67528a;}
-nav.menu_top ul{width: 80%; margin: 0 auto; list-style: none; }
+nav.menu_top{
+		background: rgba(134,37,43,1);
+		background: -moz-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(134,37,43,1)), color-stop(100%, rgba(104,82,138,1)));
+		background: -webkit-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: -o-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: -ms-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: linear-gradient(to right, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86252b', endColorstr='#68528a', GradientType=1 );
+}
+nav.menu_top ul{margin: 0 auto; list-style: none; }
 nav.menu_top ul li{display: inline-block;}
 nav.menu_top ul li a{display: block; padding: 20px 20px 20px 20px;color: #fff;}
 nav.menu_top ul li a:hover{background-color: #5d4b7c;}
 
-/* Container */
-div.container2{ width: 80%; margin: 0 auto; margin-top: 0px;}
-
 /* tops */
-section.top{width: 100%; margin-top: 400px;}
+/*section.top{width: 100%; margin-top: 400px;}
 div.ranking{ padding: 10px 10px 20px 10px;}
 div.ranking table{width: 100%; background:url(../imagens/background/bg_ranking.png) no-repeat #333; background-size: 100%; padding: 10px;}
 div.ranking table tr th{background-color: #67528a;  padding: 10px; color: #fff;}
 div.ranking table tr td{padding: 10px; margin-top: 5px; color: #aaa;}
+*/
+
+div.ranking{
+	margin-top: 40px;
+}
+	div.ranking > table{
+		width: 100%;
+	}
+
+	div.ranking > table tr{
+		width: 100%;
+	}
+
+	div.ranking > table tr:first-child{
+		height: 90px;
+
+		background: rgba(134,37,43,1);
+		background: -moz-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(134,37,43,1)), color-stop(100%, rgba(104,82,138,1)));
+		background: -webkit-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: -o-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: -ms-linear-gradient(left, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		background: linear-gradient(to right, rgba(134,37,43,1) 0%, rgba(104,82,138,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86252b', endColorstr='#68528a', GradientType=1 );
+	}
+	
+	div.ranking > table tr{
+		background-color: #22232b;
+	}
+
+	div.ranking > table tr td{
+		padding: 20px;
+		color: #fff;
+		border-bottom: 1px solid #0f1014;
+	}
+	div.ranking > table tr td:first-child{
+		width: 40px;
+	}
+
+	div.ranking > table tr td:last-child{
+		width: 40px;
+	}
 
 /* Content */
+.colu-0{background-color: ; height: 500px;}
+.colu-1{background-color: ;}
+.colu-2{background-color: ;}
+
+
+/* EStilizando News */
+
+	div.title{
+		font-family: arial black, sans-serif;
+		font-size: 1.5em;
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	div.title span{
+		border-bottom: 4px solid #67528a;
+	}
+
+div.news{
+	margin-top: 40px;
+	display: block;
+}
+
+div.news-content{
+	margin-bottom: 40px;
+}
+
+	div.news-content div.thumb-img{
+		float: left;
+		margin-right: 15px;
+	}
+	div.news-content div.thumb-img img{
+		width: 250px;
+		height: 170px;
+	}
+
+	div.news-content div.text span{
+		color: rgba(134,37,43,1);
+		text-transform: uppercase;
+	}
+
+	div.news-content div.text h1{
+		font-size: 1.5em;
+		color: #fff;
+	}
+
+	div.news-content div.text p{
+		color: #555;
+	}
+
+	div.news-content > div.text > div.status{
+		padding: 10px 0px 10px 0px;
+	}
+
+	div.news-content > div.text > div.status span{
+		color: #777;
+		font-weight: bold;
+	}
+
+	div.news-content > div.text > div.status span strong{
+		color: #67528a;
+	}
