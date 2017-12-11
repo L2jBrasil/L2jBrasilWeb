@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="{{ Functions::CDNurl() }}/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
   <!-- Youplay -->
 
-  <link rel="stylesheet" type="text/css" href="{{ Functions::CDNurl() }}/youplay/css/youplay.min.css" />
+  <link rel="stylesheet" type="text/css" href="{{ Functions::CDNurl() }}/youplay/css/youplay.css" />
 
   <!-- Custom Styles -->
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
