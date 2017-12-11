@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>youplay</title>
+  <title>Lineage 2 ∆ Reaper of Souls</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +25,7 @@
   <link rel="stylesheet" type="text/css" href="{{ Functions::CDNurl() }}/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
   <!-- Youplay -->
 
-  <link rel="stylesheet" type="text/css" href="{{ Functions::CDNurl() }}/youplay/css/youplay.css" />
+  <link rel="stylesheet" type="text/css" href="{{ Functions::CDNurl() }}/css/youplay.css" />
 
   <!-- Custom Styles -->
   <link rel="stylesheet" type="text/css" href="assets/css/custom.css" />
@@ -64,19 +64,19 @@
                     </a>
             <div class="dropdown-menu">
               <ul role="menu">
-                <li><a href="store-1.html">Store Style 1</a>
+                <li><a href="#!">Store Style 1</a>
                 </li>
-                <li><a href="store-2.html">Store Style 2</a>
+                <li><a href="#!">Store Style 2</a>
                 </li>
-                <li><a href="cart.html">Cart</a>
+                <li><a href="#!">Cart</a>
                 </li>
               </ul>
               <ul role="menu">
-                <li><a href="store-product-1.html">Product Style 1</a>
+                <li><a href="#!">Product Style 1</a>
                 </li>
-                <li><a href="store-product-2.html">Product Style 2</a>
+                <li><a href="#!">Product Style 2</a>
                 </li>
-                <li><a href="checkout.html">Checkout</a>
+                <li><a href="#!">Checkout</a>
                 </li>
               </ul>
             </div>
@@ -87,19 +87,19 @@
                     </a>
             <div class="dropdown-menu">
               <ul role="menu">
-                <li><a href="blog-1.html">Blog Style 1</a>
+                <li><a href="#!">Blog Style 1</a>
                 </li>
-                <li><a href="blog-2.html">Blog Style 2</a>
+                <li><a href="#!">Blog Style 2</a>
                 </li>
-                <li><a href="blog-3.html">Blog Style 3</a>
+                <li><a href="#!">Blog Style 3</a>
                 </li>
               </ul>
               <ul role="menu">
-                <li><a href="blog-post-1.html">Blog Post 1</a>
+                <li><a href="#!">Blog Post 1</a>
                 </li>
-                <li><a href="blog-post-2.html">Blog Post 2</a>
+                <li><a href="#!">Blog Post 2</a>
                 </li>
-                <li><a href="blog-post-3.html">Blog Post 3</a>
+                <li><a href="#!">Blog Post 3</a>
                 </li>
               </ul>
             </div>
@@ -114,48 +114,48 @@
                   <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">User</a>
                   <div class="dropdown-menu">
                     <ul role="menu">
-                      <li><a href="user-activity.html">Activity</a>
+                      <li><a href="#!">Activity</a>
                       </li>
-                      <li><a href="user-profile.html">Profile</a>
+                      <li><a href="#!">Profile</a>
                       </li>
-                      <li><a href="user-messages.html">Messages</a>
+                      <li><a href="#!">Messages</a>
                       </li>
-                      <li><a href="user-messages-compose.html">Messages Compose</a>
+                      <li><a href="#!">Messages Compose</a>
                       </li>
-                      <li><a href="user-settings.html">Settings</a>
+                      <li><a href="#!">Settings</a>
                       </li>
                     </ul>
                   </div>
                 </li>
-                <li><a href="forums.html">Forums</a>
+                <li><a href="#!">Forums</a>
                 </li>
-                <li><a href="forums-topics.html">Forums Topics</a>
+                <li><a href="#!">Forums Topics</a>
                 </li>
-                <li><a href="forums-single-topic.html">Single Topic</a>
+                <li><a href="#!">Single Topic</a>
                 </li>
-                <li><a href="matches-list.html">Matches List</a>
+                <li><a href="#!">Matches List</a>
                 </li>
-                <li><a href="match.html">Match</a>
+                <li><a href="#!">Match</a>
                 </li>
-                <li><a href="match-2.html">Match with Maps</a>
+                <li><a href="#!">Match with Maps</a>
                 </li>
               </ul>
               <ul role="menu">
-                <li><a href="widgets.html">Widgets <span class="badge bg-default">New</span></a>
+                <li><a href="#!">Widgets <span class="badge bg-default">New</span></a>
                 </li>
-                <li><a href="components.html">Components</a>
+                <li><a href="#!">Components</a>
                 </li>
-                <li><a href="coming-soon.html">Coming Soon</a>
+                <li><a href="#!">Coming Soon</a>
                 </li>
-                <li><a href="contact.html">Contact Us</a>
+                <li><a href="#!">Contact Us</a>
                 </li>
-                <li><a href="search.html">Search</a>
+                <li><a href="#!">Search</a>
                 </li>
-                <li><a href="login.html">Login</a>
+                <li><a href="#!">Login</a>
                 </li>
-                <li><a href="404.html">404</a>
+                <li><a href="#!">404</a>
                 </li>
-                <li><a href="blank.html">Blank</a>
+                <li><a href="#!">Blank</a>
                 </li>
               </ul>
             </div>
@@ -168,9 +168,9 @@
                     </a>
             <div class="dropdown-menu">
               <ul role="menu">
-                <li><a href="http://html.nkdev.info/youplay/documentation">Documentation</a>
+                <li><a href="#!">Documentation</a>
                 </li>
-                <li><a href="http://themeforest.net/item/youplay-game-template-based-on-bootstrap/11306207?ref=_nK">Purchase</a>
+                <li><a href="#!">Purchase</a>
                 </li>
                 <li class="divider"></li>
 
@@ -180,7 +180,7 @@
                 </li>
                 <li class="divider"></li>
 
-                <li><a href="login.html">Log Out</a>
+                <li><a href="#!">Log Out</a>
                 </li>
                 <li class="dropdown dropdown-submenu pull-left">
                   <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More..</a>
@@ -267,12 +267,12 @@
       <div class="info">
         <div>
           <div class="container">
-            <h1>Diablo III: <br>Reaper of Souls</h1>
-            <em>"One of the best grind games"</em>
+            <h1 class="lineage2">Lineage @: <br>Reaper of Souls</h1>
+            <em>"One server made by the largest brazilian lineage 2 community"</em>
             <br>
             <br>
             <br>
-            <a class="btn btn-lg" href="#!">Purchase</a>
+            <a class="btn btn-lg" href="#!">Register</a>
           </div>
         </div>
       </div>
@@ -281,7 +281,7 @@
 
     <!-- Images With Text -->
     <div class="youplay-carousel" data-autoplay="5000">
-      <a class="angled-img" href="store-product-1.html">
+      <a class="angled-img" href="#!">
         <div class="img">
           <img src="assets/images/game-bloodborne-500x375.jpg" alt="">
         </div>
@@ -953,7 +953,7 @@
   <!-- Countdown -->
   <script type="text/javascript" src="{{ Functions::CDNurl() }}/bower_components/jquery.countdown/dist/jquery.countdown.min.js"></script>
   <!-- Youplay -->
-  <script type="text/javascript" src="{{ Functions::CDNurl() }}/youplay/js/youplay.min.js"></script>
+  <script type="text/javascript" src="{{ Functions::CDNurl() }}/js/youplay.min.js"></script>
 
   <!-- init youplay -->
   <script>
