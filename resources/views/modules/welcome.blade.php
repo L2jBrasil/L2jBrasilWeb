@@ -9,7 +9,7 @@
 
     <!-- Banner -->
     <section class="youplay-banner banner-top youplay-banner-parallax">
-      <div class="image" style="background-image: url('assets/images/banner-bg.jpg')">
+      <div class="image" style="background-image: url('assets/images/banner-bg-green.jpg');">
       </div>
 
       <div class="info">
@@ -27,7 +27,7 @@
     </section>
     <!-- /Banner -->
 
-    <!-- Images With Text -->
+    {{--  <!-- Images With Text -->
     <div class="youplay-carousel" data-autoplay="5000">
       <a class="angled-img" href="#!">
         <div class="img">
@@ -201,11 +201,11 @@
         </div>
       </a>
     </div>
-    <!-- /Images With Text -->
+    <!-- /Images With Text -->  --}}
 
 
 
-    <!-- Popular -->
+    {{--  <!-- Popular -->
     <h2 class="container h1">Popular <a href="#!" class="btn pull-right">See More</a></h2>
     <div class="youplay-carousel">
       <a class="angled-img" href="#!">
@@ -285,10 +285,10 @@
         </div>
       </a>
     </div>
-    <!-- /Popular -->
+    <!-- /Popular -->  --}}
 
 
-    <!-- Specials -->
+    {{--  <!-- Specials -->
     <h2 class="container h1">Specials <a href="#!" class="btn pull-right">See More</a></h2>
     <div class="youplay-carousel">
       <a class="angled-img" href="#!">
@@ -396,25 +396,18 @@
         </div>
       </a>
     </div>
-    <!-- /Specials -->
+    <!-- /Specials -->  --}}
 
 
     <!-- Preorder -->
     <div class="h2"></div>
     <section class="youplay-banner youplay-banner-parallax small">
-      <div class="image" style="background-image: url('assets/images/banner-witcher-3.jpg');">
+      <div class="image" style="background-image: url('assets/images/banner-baium.jpg');">
       </div>
 
       <div class="info container align-center">
         <div>
-          <h2>The Witcher 3:<br> Wild Hunt</h2>
-
-          <!-- See countdown init in bottom of the page -->
-          <div class="countdown h2" data-end="2017/01/01"></div>
-
-          <br>
-          <br>
-          <a class="btn btn-lg" href="#!">Pre-Order</a>
+          <a class="btn btn-lg" href="#!">Download</a>
         </div>
       </div>
     </section>
@@ -522,7 +515,7 @@
 
     <!-- Partners -->
     <section class="youplay-banner youplay-banner-parallax small mt-80">
-      <div class="image" style="background-image: url('assets/images/banner-bg.jpg');">
+      <div class="image" style="background-image: url('assets/images/banner-antharas.jpg');">
       </div>
 
       <div class="info align-center">
@@ -656,7 +649,7 @@
         <!-- Copyright -->
         <div class="copyright">
           <div class="container">
-            <strong>nK</strong> &copy; 2016. All rights reserved
+            <strong><span class="lineage2">Lineage @ Reaper of Souls</span></strong> &copy; 2017. All rights reserved
           </div>
         </div>
         <!-- /Copyright -->
