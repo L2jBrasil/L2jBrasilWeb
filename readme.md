@@ -64,9 +64,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 * Install `Composer`
 * Run: `Composer Update` inside of the cloned repository
 * Copy `.env.example` content to a new file `.env` and configure him as you want
-* Now, you i'll need a virtual domain setted to show the `public/`, example: `l2jbrasil.dev` = `myPC/L2jBrasilWeb/public`
+* Run `php artisan key:generate` in console to generate a key to application
+* Now, you i'll need a virtual domain setted to show the `public/`, example: `l2jbrasil.web` = `myPC/L2jBrasilWeb/public`
 * If you don't know how to set a virtual domain, try use `AMPPS` (MAC OSX), `WAMP` (Windows), Linux you can install `LAMP` in term and setup manualy
 * Be happy!
-
-# Important NOTE:
-* If you're using `Chrome`, the `.dev` will have problem because the last update from chrome, use another name to virtual domain and it will work.
