@@ -402,7 +402,7 @@
     <!-- Preorder -->
     <div class="h2"></div>
     <section class="youplay-banner youplay-banner-parallax small">
-      <div class="image" style="background-image: url('assets/images/banner-baium.jpg');">
+      <div class="image" style="background-image: url('assets/images/banner-bg-2.jpg');">
       </div>
 
       <div class="info container align-center">
