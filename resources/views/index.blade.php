@@ -1,9 +1,7 @@
 @extends('layouts.tplsite')
 
-@section('content')
+@section('content') <!-- Inicio do Conteudo -->
 
-	<br />
-	<br />
 	<!-- RANKS -->
 	
 	<div class="container youplay-content">
@@ -116,4 +114,4 @@
       <!-- /Single News Block -->
     </section>
     <!-- /Latest News -->
-		@endsection
+		@endsection <!-- Fim do Conteudo -->
