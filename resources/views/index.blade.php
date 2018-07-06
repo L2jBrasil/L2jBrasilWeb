@@ -3,17 +3,6 @@
 include 'incs/header.php';
 
 @endphp
-  <!-- Main Content -->
-  <section class="content-wrap">
-
-    <!-- Banner -->
-    <section class="youplay-banner banner-top youplay-banner-parallax">
-      <div class="image" style="background-image: url('assets/images/banner-bg.jpg')">
-      </div>
-    </section>
-    <!-- /Banner -->
-	
-	
 	<!-- RANKS -->
 	
 	<div class="container youplay-content">
@@ -129,6 +118,6 @@ include 'incs/header.php';
 
 @php
 
-include 'incs/header.php';
+include 'incs/footer.php';
 
 @endphp
