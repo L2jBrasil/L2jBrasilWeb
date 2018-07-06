@@ -126,9 +126,9 @@ include 'incs/header.php';
       <!-- /Single News Block -->
     </section>
     <!-- /Latest News -->
-    
+
 @php
 
-include 'incs/sidebot.php';
+include 'incs/header.php';
 
 @endphp
