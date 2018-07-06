@@ -1,8 +1,9 @@
-@php
+@extends('layouts.tplsite')
 
-include 'incs/header.php';
+@section('content')
 
-@endphp
+	<br />
+	<br />
 	<!-- RANKS -->
 	
 	<div class="container youplay-content">
@@ -76,7 +77,7 @@ include 'incs/header.php';
 	<!-- /RANKS-->
 
 	
-    <!-- NOTICIAS -->
+  <!-- NOTICIAS -->
 
     <h2 class="container h1 newstitle">
 	NEWS
@@ -115,9 +116,4 @@ include 'incs/header.php';
       <!-- /Single News Block -->
     </section>
     <!-- /Latest News -->
-
-@php
-
-include 'incs/footer.php';
-
-@endphp
+		@endsection
