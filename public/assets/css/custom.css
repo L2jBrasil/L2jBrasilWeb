@@ -1,13 +1,78 @@
 /**
+ * 
+ * Styles Custom L2jWeb
+ * By: LuizNascimento(LuizHFallen)
  *
- * Custom Styles
  *
  */
 
-  /** https://pt.fonts2u.com/lineage-2-font.fonte
-  /** Lineage 2 Font **/
-  @font-face {font-family:"Lineage 2";src:url("../fonts/49_la2font.eot?") format("eot"),url("../fonts/49_la2font.woff") format("woff"),url("../fonts/49_la2font.ttf") format("truetype"),url("../fonts/49_la2font.svg#Lineage2Font") format("svg");font-weight:normal;font-style:normal;}
+ 
+ 
+/**
 
-  .lineage2 {
-    font-family: 'Lineage 2'
-  }
+*
+* RANKS EDIT
+*
+
+*/
+
+thead.tbrank{
+	 background-color: tomato;
+	 color: white;
+ }
+
+tbody.tbrank{
+	color: #c9c9c9;
+	background-image: url("../images/banner-broken-age.jpg");
+}
+
+.tbrank th,td{
+	text-align:center;
+}
+
+
+/**
+
+*
+* END RANKS
+*
+
+*/ 
+
+/**
+*
+* NEWS EDIT
+*
+*/
+
+.newstitle{
+	background-color: tomato;
+	color: white;
+}
+
+.borderimg{
+	border: 3px solid tomato;
+}
+	
+/**
+*
+* NEWS END
+*
+*/
+
+/**
+*
+* OTHER PAGES
+*
+*/
+
+.titlepgs{
+	background-color: tomato;
+	color: white;
+	padding: 5px;
+}
+
+.boxpgs{
+	border: 0.5px solid tomato;
+	padding: 10px;
+}
