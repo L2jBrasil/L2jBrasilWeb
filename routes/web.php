@@ -16,6 +16,6 @@ Route::get('/', function () {
 });
 
 Route::get('/teste', function () {
-    return view('index');
+    return view('modules.welcome');
 
 });

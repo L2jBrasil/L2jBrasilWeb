@@ -76,3 +76,8 @@ tbody.tbrank{
 	border: 0.5px solid tomato;
 	padding: 10px;
 }
+
+.imgvote{
+	max-width: 100px;
+	max-height: 100px;
+}
