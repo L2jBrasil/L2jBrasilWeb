@@ -19,3 +19,7 @@ Route::get('/teste', function () {
     return view('modules.welcome');
 
 });
+
+Route::get('/downloads', function(){
+	return view('index');
+});

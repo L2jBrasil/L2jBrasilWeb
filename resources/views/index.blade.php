@@ -1,117 +1,53 @@
-@extends('layouts.tplsite')
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-@section('content') <!-- Inicio do Conteudo -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
-	<!-- RANKS -->
-	
-	<div class="container youplay-content">
-		<div class="row">
-			<div class="col-md-4">
-				<!-- RANK CLAN -->
-				<div class="conteudo">
-				<table class="table tbrank">
-					<thead class="tbrank">
-						<tr>
-							<th>
-							<span style="font-size: 15px; color: yellow;">
-							<i class="fas fa-trophy"></i>
-							</span>
-							</th>
-							<th>Clan Name</th>
-							<th>Reputation</th>
-						</tr>
-					</thead>
-					<tbody class="tbrank">
-						<tr>
-							<td>1°</td>
-							<td>Vassals</td>
-							<td>1000 pts</td>
-						</tr>
-						<tr>
-							<td>2°</td>
-							<td>Vassals</td>
-							<td>1000 pts</td>
-						</tr>
-						<tr>
-							<td>3°</td>
-							<td>Vassals</td>
-							<td>1000 pts</td>
-						</tr>
-						<tr>
-							<td>4°</td>
-							<td>Vassals</td>
-							<td>1000 pts</td>
-						</tr>
-					</tbody>
-				</table>
-				</div>
-				<!-- RANK CLAN -->
-			</div>
-			<div class="col-md-4">
-			
-	
-							
-			</div>
-			<div class="col-md-4">
-				<!-- RANK PK -->
-				<table class="table">
-					<thead class="tbrank">
-						<tr>
-							<th>
-							<span style="font-size: 15px; color: yellow;">
-							<i class="fas fa-trophy"></i>
-							</span>
-							</th>
-							<th>Char Name</th>
-							<th>PK's</th>
-						</tr>
-					</thead>
-				</table>
-				<!-- RANK PK -->			
-			</div>
-		</div>
-	</div>
-	
-	<!-- /RANKS-->
+    <!-- CKEDITOR -->
+    <script src="/ckeditor/ckeditor.js"></script>
 
-	
-  <!-- NOTICIAS -->
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-primary">
+      <!-- Navbar content -->
+    </nav>
+    <div class="container">
+    <h1>Hello, world!</h1>
 
-    <h2 class="container h1 newstitle">
-	NEWS
-	</h2>
-    <section class="youplay-news container">
-      <!-- Single News Block -->
-      <div class="news-one">
-        <div class="row vertical-gutter">
-          <div class="col-md-4">
-            <a href="blog-post-1.html" class="angled-img">
-              <div class="img borderimg">
-                <img src="assets/images/game-road-no-taken-500x375.jpg" alt="">
-              </div>
-            </a>
-          </div>
-          <div class="col-md-8">
-            <div class="clearfix">
-              <h3 class="h2 pull-left m-0"><a href="blog-post-1.html">Road Not Taken - First Try!</a></h3>
-              <span class="date pull-right"><i class="fa fa-calendar"></i> Today</span>
-            </div>
-            <div class="tags">
-              <i class="fa fa-tags"></i>  <a href="#">Road Not Taken</a>, <a href="#">first try</a>, <a href="#">newbie game</a>
-            </div>
-            <div class="description">
-              <p>
-                Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.
-              </p>
-              <p>
-                Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere.
-              </p>
-            </div>
-            <a href="blog-post-1.html" class="btn read-more pull-left">Read More</a>
-          </div>
-        </div>
+    <form>
+      <div class="form-group">
+        <label for="postTitle">Titulo Post</label>
+        <input type="text" class="form-control" id="posTitle" aria-describedby="TituloPost" placeholder="Entre com Titulo do Post">
       </div>
-      <!-- /Single News Block -->
-    </section>
-    <!-- /Latest News -->
-		@endsection <!-- Fim do Conteudo -->
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+      </div>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                
+            </textarea>
+            <script>
+                // Replace the <textarea id="editor1"> with a CKEditor
+                // instance, using default configuration.
+                CKEDITOR.replace( 'editor1' );
+            </script>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+
+
+
+
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  </body>
+</html>

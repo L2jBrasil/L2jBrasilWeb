@@ -15,17 +15,26 @@
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li>
-            <a href="#!">Features</a>
+            <a href="#!">Rates</a>
           </li>
           <li class="dropdown dropdown-hover ">
             <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      How to Connect <span class="caret"></span>
+                      Como se Conectar <span class="caret"></span>
                     </a>
             <div class="dropdown-menu">
               <ul role="menu">
-                <li><a href="blog-1.html">Download</a>
+                <li class="dropdown dropdown-submenu pull-left ">
+                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Download</a>
+                  <div class="dropdown-menu">
+                    <ul role="menu">
+                      <li><a href="">Download MEGA</a>
+                      </li>
+                      <li><a href="">Download MediaFire</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
-                <li><a href="blog-2.html">System Requirements</a>
+                <li><a href="blog-2.html">Requisitos Mínimos</a>
                 </li>
               </ul>
             </div>

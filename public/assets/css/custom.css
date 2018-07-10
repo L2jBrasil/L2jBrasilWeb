@@ -47,6 +47,8 @@ tbody.tbrank{
 
 .newstitle{
 	background-color: tomato;
+	border-radius: 5px 5px 40px 5px;
+	border: 1px solid tomato;
 	color: white;
 }
 
@@ -68,13 +70,15 @@ tbody.tbrank{
 
 .titlepgs{
 	background-color: tomato;
+	border-radius: 5px 5px 40px 5px;
+	border: 1px solid tomato;
 	color: white;
 	padding: 5px;
 }
 
 .boxpgs{
 	border: 0.5px solid tomato;
-	padding: 10px;
+	padding: 20px;
 }
 
 .imgvote{
