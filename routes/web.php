@@ -15,11 +15,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/teste', function () {
-    return view('modules.welcome');
-
-});
-
-Route::get('/downloads', function(){
-	return view('index');
-});
+Route::get('/teste', 'PostsController@ListPosts');
+Route::get('/teste/post', 'PostsController@ShowPost');

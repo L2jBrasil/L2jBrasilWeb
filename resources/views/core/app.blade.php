@@ -27,14 +27,14 @@
   <!-- /Preloader -->
 
   @include('core.navbar')
-  
+
 
   <!-- Main Content -->
   <section class="content-wrap">
 
     <!-- Banner -->
     <section class="youplay-banner banner-top youplay-banner-parallax">
-      <div class="image" style="background-image: url('assets/images/banner-bg.jpg')">
+      <div class="image" style="background-image: url('/assets/images/banner-bg.jpg')">
       </div>
     </section>
     <!-- /Banner -->
@@ -104,6 +104,6 @@
 
   @include('core.js')
   @yield('js')
-  
+
 </body>
 </html>

@@ -6,7 +6,7 @@
 
 @section('content')
 <!-- RANKS -->
-  
+
   <div class="container youplay-content">
     <div class="row">
       <div class="col-md-4">
@@ -51,9 +51,9 @@
         <!-- RANK CLAN -->
       </div>
       <div class="col-md-4">
-      
-  
-              
+
+
+
       </div>
       <div class="col-md-4">
         <!-- RANK PK -->
@@ -70,14 +70,14 @@
             </tr>
           </thead>
         </table>
-        <!-- RANK PK -->      
+        <!-- RANK PK -->
       </div>
     </div>
   </div>
-  
+
   <!-- /RANKS-->
 
-  
+
   <!-- NOTICIAS -->
 
     <h2 class="container h1 newstitle">
@@ -85,6 +85,7 @@
   </h2>
     <section class="youplay-news container">
       <!-- Single News Block -->
+      @foreach($posts as $p)
       <div class="news-one">
         <div class="row vertical-gutter">
           <div class="col-md-4">
@@ -96,23 +97,18 @@
           </div>
           <div class="col-md-8">
             <div class="clearfix">
-              <h3 class="h2 pull-left m-0"><a href="blog-post-1.html">Road Not Taken - First Try!</a></h3>
-              <span class="date pull-right"><i class="fa fa-calendar"></i> Today</span>
-            </div>
-            <div class="tags">
-              <i class="fa fa-tags"></i>  <a href="#">Road Not Taken</a>, <a href="#">first try</a>, <a href="#">newbie game</a>
+              <h3 class="h2 pull-left m-0"><a href="blog-post-1.html">{{ $p->titulo }}</a></h3>
+              <span class="date pull-right"><i class="fa fa-calendar"></i> {{ $p->date }}</span>
             </div>
             <div class="description">
               <p>
-                Ut sibi fuerat socius sagittis. Ego intervenerit. Vere quia a te nuper iratus occidit illos undecim annorum puer. Deinde, si hoc forte qui fuit imperavit.
-              </p>
-              <p>
-                Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere.
+                {{ str_limit($p->post, 350) }}
               </p>
             </div>
             <a href="blog-post-1.html" class="btn read-more pull-left">Read More</a>
           </div>
         </div>
       </div>
+      @endforeach
       <!-- /Single News Block -->
 @endsection
