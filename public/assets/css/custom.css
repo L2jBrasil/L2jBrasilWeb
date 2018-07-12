@@ -1,13 +1,13 @@
 /**
- * 
+ *
  * Styles Custom L2jWeb
  * By: LuizNascimento(LuizHFallen)
  *
  *
  */
 
- 
- 
+
+
 /**
 
 *
@@ -37,7 +37,7 @@ tbody.tbrank{
 * END RANKS
 *
 
-*/ 
+*/
 
 /**
 *
@@ -55,7 +55,7 @@ tbody.tbrank{
 .borderimg{
 	border: 3px solid tomato;
 }
-	
+
 /**
 *
 * NEWS END
@@ -78,6 +78,7 @@ tbody.tbrank{
 
 .boxpgs{
 	border: 0.5px solid tomato;
+  border-radius: 5px 5px 40px 5px;
 	padding: 20px;
 }
 

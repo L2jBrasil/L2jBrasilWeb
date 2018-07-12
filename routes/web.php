@@ -11,9 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/teste', 'PostsController@ListPosts');
-Route::get('/teste/post', 'PostsController@ShowPost');
+/* Index Routes */
+Route::get('/', 'IndexController@getData');
+Route::get('/post/{idNews}', 'IndexController@showPost')->where('idNews', '[0-9]+');

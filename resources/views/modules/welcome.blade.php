@@ -84,6 +84,13 @@
   NEWS
   </h2>
     <section class="youplay-news container">
+      @if(empty($posts))
+
+      <div>
+        Você não tem nenhum produto cadastrado.
+      </div>
+
+      @else
       <!-- Single News Block -->
       @foreach($posts as $p)
       <div class="news-one">
@@ -105,10 +112,11 @@
                 {{ str_limit($p->post, 350) }}
               </p>
             </div>
-            <a href="blog-post-1.html" class="btn read-more pull-left">Read More</a>
+            <a href="/post/{{ $p->idNews }}" class="btn read-more pull-left">Leia Mais</a>
           </div>
         </div>
       </div>
       @endforeach
       <!-- /Single News Block -->
+      @endif
 @endsection
