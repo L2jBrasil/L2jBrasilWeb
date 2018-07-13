@@ -86,3 +86,49 @@ tbody.tbrank{
 	max-width: 100px;
 	max-height: 100px;
 }
+
+
+/*
+
+*
+* DASHBOARD
+*
+
+*/
+
+.maindash{
+	padding-top: 30px;
+}
+
+.postsdash{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 10px;
+	border: 1px solid purple;
+	padding-top: 30px;
+	padding: 10px;
+	background-color: rgba(230, 197, 197, 0.56);
+	color: purple;
+}
+
+
+.bodydash{
+	background-image: url("/assets/images/background_dashboard.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.submenu{
+	color:purple;
+}
+.submenu:hover{
+	color:white;
+}
+
+.btn-dash{
+	background-color: tomato;
+}
+.btn-dash:hover{
+	background-color: white;
+	color: purple;
+}

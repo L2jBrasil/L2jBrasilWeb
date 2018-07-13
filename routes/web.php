@@ -14,3 +14,10 @@
 /* Index Routes */
 Route::get('/', 'IndexController@getData');
 Route::get('/post/{idNews}', 'IndexController@showPost')->where('idNews', '[0-9]+');
+
+Route::get('/testes', function(){
+	return view('modules.dashboard.addPost');
+});
+
+Route::get('/dashboard/posts/novo', 'DashController@novoPost');
+Route::get('/dashboard/posts/adiciona', 'DashController@sendData');
