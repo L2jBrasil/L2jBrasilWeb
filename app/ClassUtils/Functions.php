@@ -26,4 +26,8 @@ class Functions extends Controller{
     return 'http://'.$_SERVER['HTTP_HOST'].'/assets';
   }
 
+  static function hashL2($Password){
+  	return base64_encode(pack('H*', sha1(utf8_encode($Password))));
+  }
+
 }// End Functions

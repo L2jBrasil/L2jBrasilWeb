@@ -21,3 +21,17 @@ Route::get('/testes', function(){
 
 Route::get('/dashboard/posts/novo', 'DashController@novoPost');
 Route::get('/dashboard/posts/adiciona', 'DashController@sendData');
+
+
+/* Sistema de Login e Autenticação */
+
+Route::group(['middleware' => 'accounts'], function()
+{
+
+	/* GET */
+	Route::get('/login', 'Auth\LoginController@fmrLogin');
+	Route::get('/logout', 'Auth\LoginController@logout');
+
+	/* POST */
+	Route::post('/login', 'Auth\LoginController@cLogin')->name('login');
+});

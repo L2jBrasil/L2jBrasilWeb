@@ -116,6 +116,7 @@ tbody.tbrank{
 	background-image: url("/assets/images/background_dashboard.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-attachment: fixed;
 }
 
 .submenu{
@@ -131,4 +132,14 @@ tbody.tbrank{
 .btn-dash:hover{
 	background-color: white;
 	color: purple;
+}
+
+.loginbox{
+	margin: 0 auto;
+	width: 400px;
+	height: 350px;
+	background: rgba(0, 0, 0, 0.48);
+	margin-top: 10%;
+	padding: 10px;
+	border-radius: 7px;
 }

@@ -1,6 +1,7 @@
 @extends('core.dashboard.app')
 
 @section('content')
+@include('core.dashboard.nav')
     <div class="container">
       <div class="postsdash">
         <ul class="nav nav-tabs" id="postsTab" role="tablist">

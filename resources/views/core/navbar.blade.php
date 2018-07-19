@@ -97,10 +97,15 @@
           </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
+          @guest('accounts')
+
           <li class="dropdown dropdown-hover">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                      John Doe <span class="badge bg-default">2</span> <span class="caret"></span> <span class="label">it is you</span>
-                    </a>
+            <a href="#!" role="button" aria-expanded="false">Login / Register</a>
+          </li>
+            
+          @else
+          <li class="dropdown dropdown-hover">
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{ auth()->guard('accounts')->user()->login }} </a>
             <div class="dropdown-menu">
               <ul role="menu">
                 <li><a href="http://html.nkdev.info/youplay/documentation">Documentation</a>
@@ -131,6 +136,7 @@
               </ul>
             </div>
           </li>
+          @endguest
         </ul>
       </div>
     </div>
