@@ -142,4 +142,7 @@ tbody.tbrank{
 	margin-top: 10%;
 	padding: 10px;
 	border-radius: 7px;
+
+	/* Propiedades de Texto */
+	color: white;
 }

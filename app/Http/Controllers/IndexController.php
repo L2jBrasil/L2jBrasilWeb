@@ -12,9 +12,18 @@ class IndexController extends Controller {
 	public function getData(){
 
 		$posts = DB::table('news_site')->orderBy('date', 'desc')->get();
+		if(sizeof($posts) > 0):
 
 		return view('modules.welcome')
 		->with('posts', $posts);
+
+		else:
+
+			$post = 1;
+			return view('modules.welcome')
+			->with('post', $post);
+
+		endif;
 
 	}
 

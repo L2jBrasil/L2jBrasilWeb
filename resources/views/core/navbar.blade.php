@@ -100,9 +100,11 @@
           @guest('accounts')
 
           <li class="dropdown dropdown-hover">
-            <a href="#!" role="button" aria-expanded="false">Login / Register</a>
+            <a href="#!" role="button" aria-expanded="false">Login / Register
+                <i class="fas fa-sign-in-alt"></i>
+            </a>
           </li>
-            
+
           @else
           <li class="dropdown dropdown-hover">
             <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{ auth()->guard('accounts')->user()->login }} </a>

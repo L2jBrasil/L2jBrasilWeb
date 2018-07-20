@@ -79,18 +79,19 @@
 
 
   <!-- NOTICIAS -->
-
-    <h2 class="container h1 newstitle">
+  @if($post > 0)
+    <div class="container">
+      <div class="alert alert-secondary" role="alert">
+        Não possuimos nenhuma postagem cadastrada <i class="fas fa-sad-tear"></i>
+      </div>
+    </div>
+  @else
+  <h2 class="container h1 newstitle">
   NEWS
   </h2>
     <section class="youplay-news container">
-      @if(empty($posts))
 
-      <div>
-        Você não tem nenhum produto cadastrado.
-      </div>
 
-      @else
       <!-- Single News Block -->
       @foreach($posts as $p)
       <div class="news-one">
