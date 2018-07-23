@@ -68,6 +68,11 @@ tbody.tbrank{
 *
 */
 
+.user{
+	font-weight: bold;
+	color: tomato;
+}
+
 .titlepgs{
 	background-color: tomato;
 	border-radius: 5px 5px 40px 5px;
@@ -137,12 +142,37 @@ tbody.tbrank{
 .loginbox{
 	margin: 0 auto;
 	width: 400px;
-	height: 350px;
+	height: 100%;
 	background: rgba(0, 0, 0, 0.48);
 	margin-top: 10%;
 	padding: 10px;
 	border-radius: 7px;
 
 	/* Propiedades de Texto */
+	color: white;
+
+}
+
+.loginbox .input:focus{
+	border-color: rgba(255, 104, 112, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 104, 112, 0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 104, 112,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 104, 112,.6);
+}
+
+.loginbox .btn-dash{
+	color: white;
+}
+
+.loginbox .btn-dash:hover{
+	color: purple;
+}
+
+.loginbox .recoverpass{
+	display: block;
+	text-align: right;
+	font-size: 12px;
 	color: white;
 }

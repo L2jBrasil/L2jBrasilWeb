@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
-use Request;
+use Illuminate\Http\Request;
+use App\Models\General\Posts;
 
 class DashController extends Controller {
 
@@ -12,14 +13,22 @@ class DashController extends Controller {
 		return view('modules.dashboard.addPost');
 	}
 
-	public function sendData(){
+	public function sendData(Request $request){
 
+		if($request->hasFile('image') && $request->file('image')->isValid()){
 
-		$titulo = Request::input('postTitle');
-		$autor = Request::input('autorPost');
-		$date = Request::input('datePost');
-		$post = Request::input('editor1');
+			$name = $request->image->getClientOriginalName(); 
 
-		return implode(', ', array($titulo, $autor, $date, $post));
+			$nameFile = "{$name}";
+
+			$upload = $request->image->storeAs('posts', $nameFile);
+
+			DB::table('news_site')->insert(['title' => $request->title, ])
+
+		}
+		else
+		{
+			return "BOsta/";
+		}
 	}
 }

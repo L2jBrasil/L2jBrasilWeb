@@ -15,18 +15,22 @@
 Route::get('/', 'IndexController@getData');
 Route::get('/post/{idNews}', 'IndexController@showPost')->where('idNews', '[0-9]+');
 
-Route::get('/testes', function(){
-	return view('modules.dashboard.addPost');
-});
 
 Route::get('/dashboard/posts/novo', 'DashController@novoPost');
-Route::get('/dashboard/posts/adiciona', 'DashController@sendData');
+Route::post('/dashboard/posts/adiciona', 'DashController@sendData');
 
 
 /* Sistema de Login e Autenticação */
 
 Route::group(['middleware' => 'accounts'], function()
 {
+	/* Grupo de Urls com AccessLevel = 7 */
+	Route::group(['middleware' => 'protectsystem'], function (){
+		Route::get('/testes', function(){
+			return view('modules.dashboard.testpost');
+		}); // Ignora a Bagunça porque é so teste ! ahahaahahahaah 
+	});
+
 
 	/* GET */
 	Route::get('/login', 'Auth\LoginController@fmrLogin');

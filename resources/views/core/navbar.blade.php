@@ -107,33 +107,20 @@
 
           @else
           <li class="dropdown dropdown-hover">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> {{ auth()->guard('accounts')->user()->login }} </a>
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bem vindo, <span class="user">{{ auth()->guard('accounts')->user()->login }}</span> <span class="caret"></span></a>
             <div class="dropdown-menu">
               <ul role="menu">
-                <li><a href="http://html.nkdev.info/youplay/documentation">Documentation</a>
+                <li><a href="">Trocar Senha</a>
                 </li>
-                <li><a href="http://themeforest.net/item/youplay-game-template-based-on-bootstrap/11306207?ref=_nK">Purchase</a>
-                </li>
-                <li class="divider"></li>
-
-                <li><a href="user-profile.html">Profile <span class="badge pull-right bg-warning">13</span></a>
-                </li>
-                <li><a href="cart.html">My Cart <span class="badge pull-right bg-default">3</span></a>
+                <li><a href="">Unstuck</a>
                 </li>
                 <li class="divider"></li>
+                @if( Auth::guard('accounts')->user()->accessLevel  == 7)
 
+                <li><a href="">Dashboard</a></li>
+                @else
+                @endif
                 <li><a href="login.html">Log Out</a>
-                </li>
-                <li class="dropdown dropdown-submenu pull-left">
-                  <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">More..</a>
-                  <div class="dropdown-menu">
-                    <ul role="menu">
-                      <li><a href="#!">3rd level</a>
-                      </li>
-                      <li><a href="#!">3rd level</a>
-                      </li>
-                    </ul>
-                  </div>
                 </li>
               </ul>
             </div>

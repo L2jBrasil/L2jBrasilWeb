@@ -15,7 +15,8 @@
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="home-tab">
 
-        <form action="/dashboard/posts/adiciona">
+        <form action="/dashboard/posts/adiciona" enctype="multipart/form-data" method="post">
+          {{ csrf_field() }}
         <div class="form-group">
           <label for="postTitle">Titulo Post</label>
           <input type="text" class="form-control" id="posTitle" aria-describedby="TituloPost" placeholder="Entre com Titulo do Post" name="postTitle">

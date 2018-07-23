@@ -68,7 +68,12 @@ class LoginController extends Controller
             };
             else:
                 return redirect('/login')
-                    ->with('error', "Failed")
+                    ->with('error', "
+                    <div class='alert alert-primary' role='alert'>
+
+                        Falhou! Reinsira os dados corretamente!
+
+                    </div>")
                     ->withInput();   
         endif;
         
