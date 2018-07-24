@@ -98,8 +98,8 @@
         <div class="row vertical-gutter">
           <div class="col-md-4">
             <a href="blog-post-1.html" class="angled-img">
-              <div class="img borderimg">
-                <img src="assets/images/game-road-no-taken-500x375.jpg" alt="">
+              <div class="borderimg">
+                <img src="{{ $p->urlimg }}" alt="">
               </div>
             </a>
           </div>
@@ -110,10 +110,10 @@
             </div>
             <div class="description">
               <p>
-                {{ str_limit($p->post, 350) }}
+                {!! str_limit($p->post, 350) !!}
               </p>
             </div>
-            <a href="/post/{{ $p->idNews }}" class="btn read-more pull-left">Leia Mais</a>
+            <a href="/post/{{ $p->id }}" class="btn read-more pull-left">Leia Mais</a>
           </div>
         </div>
       </div>

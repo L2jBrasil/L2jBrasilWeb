@@ -107,7 +107,7 @@
 
           @else
           <li class="dropdown dropdown-hover">
-            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Bem vindo, <span class="user">{{ auth()->guard('accounts')->user()->login }}</span> <span class="caret"></span></a>
+            <a href="#!" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fas fa-user-circle"></i> Bem vindo, <span class="user">{{ auth()->guard('accounts')->user()->login }}</span> <span class="caret"></span></a>
             <div class="dropdown-menu">
               <ul role="menu">
                 <li><a href="">Trocar Senha</a>

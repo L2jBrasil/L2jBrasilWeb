@@ -13,7 +13,7 @@
 
 /* Index Routes */
 Route::get('/', 'IndexController@getData');
-Route::get('/post/{idNews}', 'IndexController@showPost')->where('idNews', '[0-9]+');
+Route::get('/post/{id}', 'IndexController@showPost')->where('id', '[0-9]+');
 
 
 Route::get('/dashboard/posts/novo', 'DashController@novoPost');
@@ -26,16 +26,19 @@ Route::group(['middleware' => 'accounts'], function()
 {
 	/* Grupo de Urls com AccessLevel = 7 */
 	Route::group(['middleware' => 'protectsystem'], function (){
-		Route::get('/testes', function(){
-			return view('modules.dashboard.testpost');
-		}); // Ignora a Bagunça porque é so teste ! ahahaahahahaah 
+		
+		Route::get('/dashboard', 'DashController@showDash');
+		Route::get('/dashboard/posts/novo', 'DashController@novoPost');
+		
+
+
 	});
 
 
-	/* GET */
+	/* Routes [GET] */
 	Route::get('/login', 'Auth\LoginController@fmrLogin');
 	Route::get('/logout', 'Auth\LoginController@logout');
 
-	/* POST */
+	/* Routes [POST] */
 	Route::post('/login', 'Auth\LoginController@cLogin')->name('login');
 });

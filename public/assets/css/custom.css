@@ -54,6 +54,10 @@ tbody.tbrank{
 
 .borderimg{
 	border: 3px solid tomato;
+	border-radius: 7px;
+	max-width: 285px;
+	max-height: 285px;
+	min-height: 285px;
 }
 
 /**
@@ -112,8 +116,8 @@ tbody.tbrank{
 	border: 1px solid purple;
 	padding-top: 30px;
 	padding: 10px;
-	background-color: rgba(230, 197, 197, 0.56);
-	color: purple;
+	background-color: rgba(0, 0, 0, 0.56);
+	color: white;
 }
 
 
@@ -137,6 +141,14 @@ tbody.tbrank{
 .btn-dash:hover{
 	background-color: white;
 	color: purple;
+}
+.postsdash .input:focus{
+	border-color: rgba(255, 104, 112, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 104, 112, 0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 104, 112,.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(255, 104, 112,.6);	
 }
 
 .loginbox{
