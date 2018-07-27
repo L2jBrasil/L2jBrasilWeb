@@ -11,9 +11,14 @@
 |
 */
 
-/* Index Routes */
-Route::get('/', 'IndexController@getData');
-Route::get('/post/{id}', 'IndexController@showPost')->where('id', '[0-9]+');
+/* Index Routes [GET] */
+Route::get('/', 'IndexController@getData'); //Retorna Index View e os Dados!
+
+Route::get('/post/{id}', 'IndexController@showPost')->where('id', '[0-9]+'); //Chama a view de posts com seu respectivo Post!
+
+Route::get('/status/boss', 'StatusController@getDataBoss')->name('status.boss');// Chama a view de Status/Boss com seus respectivos dados
+
+
 
 
 Route::get('/dashboard/posts/novo', 'DashController@novoPost');

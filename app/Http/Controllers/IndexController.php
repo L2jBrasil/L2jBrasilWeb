@@ -11,12 +11,21 @@ class IndexController extends Controller {
 
 	public function getData(){
 
-		$posts = DB::table('news_site')->orderBy('date', 'desc')->get();
+		$posts = DB::table('news_site')
+		->orderBy('date', 'desc')
+		->get(); // Busca se possuem postagens no banco de dados!
+
+		$rankpvp = DB::table('characters')
+		->orderBy('pvpkills', 'desc')
+		->get();
+
+
 		if(sizeof($posts) > 0):
 		$post = 0;
 		return view('modules.welcome')
 		->with('posts', $posts)
-		->with('post', $post);
+		->with('post', $post)
+		->with('rankpvp', $rankpvp);
 
 		else:
 

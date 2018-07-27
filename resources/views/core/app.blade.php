@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Lineage II - L2JBrasilWeb</title>
+  <title>Lineage II - {{ config('app.name') }}</title>
 
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,13 +18,6 @@
 
 
 <body>
-
-  <!-- Preloader -->
-  <div class="page-preloader preloader-wrapp">
-    <img src="assets/images/logo.png" alt="">
-    <div class="preloader"></div>
-  </div>
-  <!-- /Preloader -->
 
   @include('core.navbar')
 
@@ -47,7 +40,7 @@
     </section>
     <!-- Footer -->
     <footer class="youplay-footer-parallax">
-      <div class="wrapper" style="background-image: url('assets/images/footer-bg.jpg')">
+      <div class="wrapper" style="background-image: url('/assets/images/footer-bg.jpg')">
 
         <!-- Social Buttons -->
         <div class="social">

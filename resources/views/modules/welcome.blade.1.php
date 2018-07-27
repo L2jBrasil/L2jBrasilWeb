@@ -7,77 +7,7 @@
 @section('content')
 <!-- RANKS -->
 
-  <div class="container-fluid youplay-content">
-    <div class="row">
-      <div class="col-md-8">
-          <div class="title-pages">
-              <span class="span-titles">Novidades</span> do Server
-          </div>
-          @foreach($posts as $p)
-          <div class="row">
-            <div class"col-md-4">
-
-            </div>
-
-            <div class="col-md-8">
-              <div class="title-pages">
-                {{ $p->titulo }}
-              </div>
-            </div>
-          </div>
-          @endforeach
-          
-      </div>
-
-      <div class="col-md-4">
-
-          <div class="title-pages">
-              <span class="span-titles">Hall</span> da Fama
-          </div>
-
-          <table class="table">
-              <thead class="tbrank">
-                <tr>
-                  <th>
-                  <span style="font-size: 15px; color: yellow;">
-                  <i class="fas fa-trophy"></i>
-                  </span>
-                  </th>
-                  <th>Char Name</th>
-                  <th>PvP's</th>
-                </tr>
-              </thead>
-              <tbody class="tbrank">
-                @foreach($rankpvp as $pvp)
-                <tr>
-                  <td>
-                    @if( $loop->iteration < 2 )
-                      <span class="efeitotop">{{ $loop->iteration }}</span>
-                    @else
-                      {{ $loop->iteration }}
-                    @endif
-                  </td>
-                  <td>
-                    @if( $loop->iteration < 2 )
-                      <span class="efeitotop">{{ $pvp->char_name}}</span>
-                    @else
-                      {{ $pvp->char_name }}
-                    @endif
-                  </td>
-                  <td>
-                    @if( $loop->iteration < 2 )
-                      <span class="efeitotop">{{ $pvp->pvpkills }} pvp's</span>
-                    @else
-                      {{ $pvp->pvpkills }} pvp's
-                    @endif
-                  </td>
-                </tr>
-                
-                @endforeach
-              </tbody>
-            </table>         
-      </div>
-    </div>
+  <div class="container youplay-content">
     <div class="title-pages">
       <span class="span-titles">Hall</span> da Fama
     </div>
