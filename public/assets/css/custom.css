@@ -63,13 +63,76 @@ tbody.tbrank{
 }
 
 .borderimg{
-	border: 3px solid tomato;
-	border-radius: 7px;
-	max-width: 285px;
-	max-height: 285px;
-	min-height: 285px;
+
+	max-width: 250px;
+	max-height: 170px;
+	min-width: 250px;
+	min-height: 170px;
+	margin-left: 2%;
 }
 
+.services{
+	background-color: tomato;
+	padding: 5px;
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.services-on{
+	background-color: greenyellow;
+	padding: 5px;
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+	border-right: 5px solid tomato;
+}
+
+.rates{
+	background-color: tomato;
+	padding: 5px;
+	font-size: 14px;
+	color: white;
+	text-transform: uppercase;
+	margin-top: 20px;
+	width: 50%;
+	border-radius: 7px;
+}
+.rates-num{
+	border-radius: 7px;
+    border:5px solid tomato;
+    width:100px;
+    height:100px;
+	padding: 5px;
+	font-size: 30px;
+	color: tomato;
+	text-transform: uppercase;
+	
+}
+
+.center-rate{
+    width:100px;
+    height:100px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+}
+
+.rates-margin{
+	margin-top: 10%;
+}
+
+.moreinfos{
+	padding-top: 20%;
+	font-size:20px;
+	text-transform: uppercase;
+}
+
+.basicrates{
+	padding-bottom: 5%;
+}
 /**
 *
 * NEWS END
@@ -94,8 +157,10 @@ tbody.tbrank{
 }
 
 .span-titles{
-	text-decoration: underline;
-	text-decoration-color: tomato;
+	padding-left: 5px;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid tomato;
 }
 
 .novidades{

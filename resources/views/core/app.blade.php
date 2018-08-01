@@ -37,7 +37,7 @@
     @yield('content') <!-- Inserção do Conteudo do site! -->
 
 
-    </section>
+
     <!-- Footer -->
     <footer class="youplay-footer-parallax">
       <div class="wrapper" style="background-image: url('/assets/images/footer-bg.jpg')">
