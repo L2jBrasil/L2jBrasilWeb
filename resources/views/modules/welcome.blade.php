@@ -63,7 +63,7 @@
 
 
       <!-- Latest News -->
-      <h2 class="container h1"><span class="span-titles">Ultimas  Noticias</span></h2>
+      <h2 class="container"><span class="span-titles">Ultimas  Noticias</span></h2>
       <section class="youplay-news container">
         <!-- Single News Block -->
         <div class="news-one">
@@ -91,13 +91,60 @@
                   Quod satis pecuniae sempiternum. Ut sciat oportet motum. Nunquam invenies eum. Hic de tabula. Lorem ipsum occurrebat pragmaticam semper ut, si quis ita velim tibi bene recognoscere.
                 </p>
               </div>
-              <a href="blog-post-1.html" class="btn read-more pull-left">Read More</a>
+              <a href="blog-post-1.html" class="btn bt-primary read-more pull-left"><i class="fab fa-readme"></i> Leia Mais...</a>
             </div>
           </div>
         </div>
         <!-- /Single News Block -->
 
       </section>
+
+      <div class="container">
+        <h2 class="container span-titles">Hall da Fama</h2>
+          <div class="row">
+            <div class="col-md-4" align="center">
+              <div class="hall">
+                <i class="fas fa-star"></i>
+                  @foreach($rankpvp as $pvp)
+                    @if( $loop->iteration == 2 )
+                      {{ $pvp->char_name }}
+                      <br />
+                      <span class="position">{{ $pvp->pvpkills }} Kills / 2° Lugar</span>
+                    @else
+                    @endif
+                  @endforeach
+              </div>
+            </div>
+            <div class="col-md-4" align="center">
+              <div class="hall">
+                
+                  @foreach($rankpvp as $pvp)
+                    @if( $loop->iteration < 2 )
+                      <span class="efeitotop"><i class="fas fa-star"></i> {{ $pvp->char_name }}</span>
+                      <br />
+                      <span class="position">{{ $pvp->pvpkills }} Kills / 1° Lugar</span>
+                    @else
+                    @endif
+                  @endforeach
+              </div>
+            </div>
+            <div class="col-md-4" align="center">
+              <div class="hall">
+                <i class="fas fa-star"></i>
+                  @foreach($rankpvp as $pvp)
+                    @if( $loop->iteration == 3 )
+                      {{ $pvp->char_name }}
+                      <br />
+                      <span class="position">{{ $pvp->pvpkills }} Kills / 3° Lugar</span>
+                    @else
+                    @endif
+                  @endforeach
+
+              </div>          
+            </div>
+          </div>
+      </div>
+
 
     </div>
 

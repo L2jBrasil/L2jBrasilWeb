@@ -36,8 +36,9 @@ tbody.tbrank{
 }
 
 .efeitotop{
-	color: yellow;
+	color: tomato;
 	font-weight: bold;
+	font-size: 40px;
 }
 
 
@@ -80,7 +81,7 @@ tbody.tbrank{
 }
 
 .services-on{
-	background-color: greenyellow;
+	background-color: green;
 	padding: 5px;
 	font-size: 14px;
 	color: white;
@@ -132,6 +133,14 @@ tbody.tbrank{
 
 .basicrates{
 	padding-bottom: 5%;
+}
+
+.hall{
+	font-size: 30px;
+}
+
+.position{
+	font-size: 12px;
 }
 /**
 *
@@ -292,4 +301,17 @@ tbody.tbrank{
 
 .margin-top{
 	margin-top: 10px;
+}
+
+.bt-primary{
+	background-color: transparent;
+	border: 2px solid tomato;
+	text-decoration: none;
+	color: tomato;
+}
+
+.bt-primary:hover,.bt-primary:focus{
+	background-color: transparent;
+	border: 2px solid purple;
+	color: purple;
 }
