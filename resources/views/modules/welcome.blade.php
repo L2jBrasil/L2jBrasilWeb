@@ -98,7 +98,7 @@
         <!-- /Single News Block -->
 
       </section>
-
+{{-- 
       <div class="container">
         <h2 class="container span-titles">Hall da Fama</h2>
           <div class="row">
@@ -143,7 +143,7 @@
               </div>          
             </div>
           </div>
-      </div>
+      </div> --}}
 
 
     </div>

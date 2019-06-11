@@ -315,3 +315,7 @@ tbody.tbrank{
 	border: 2px solid purple;
 	color: purple;
 }
+
+.view-100 {
+	height: 100vh;
+}

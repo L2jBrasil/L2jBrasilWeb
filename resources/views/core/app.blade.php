@@ -26,7 +26,7 @@
   <section class="content-wrap">
 
     <!-- Banner -->
-    <section class="youplay-banner banner-top youplay-banner-parallax">
+    <section class="youplay-banner banner-top youplay-banner-parallax view-100">
       <div class="image" style="background-image: url('/assets/images/banner-bg.jpg')">
       </div>
     </section>
@@ -80,7 +80,7 @@
         <!-- Copyright -->
         <div class="copyright">
           <div class="container">
-            <strong>L2JBrasilWeb</strong> &copy; 2018. Todos direitos reservados.
+            <strong>L2JBrasilWeb</strong> &copy; 2019. Todos direitos reservados.
           </div>
         </div>
         <!-- /Copyright -->

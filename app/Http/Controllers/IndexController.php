@@ -11,29 +11,35 @@ class IndexController extends Controller {
 
 	public function getData(){
 
-		$posts = DB::table('news_site')
-		->orderBy('date', 'desc')
-		->get(); // Busca se possuem postagens no banco de dados!
+		// $posts = DB::table('news_site')
+		// ->orderBy('date', 'desc')
+		// ->get(); // Busca se possuem postagens no banco de dados!
 
-		$rankpvp = DB::table('characters')
-		->orderBy('pvpkills', 'desc')
-		->get();
+		// $rankpvp = DB::table('characters')
+		// ->orderBy('pvpkills', 'desc')
+		// ->get();
 
 
-		if(sizeof($posts) > 0):
-		$post = 0;
-		return view('modules.welcome')
-		->with('posts', $posts)
-		->with('post', $post)
-		->with('rankpvp', $rankpvp);
+		// if(sizeof($posts) > 0):
+		// $post = 0;
+		// return view('modules.welcome')
+		// ->with('posts', $posts)
+		// ->with('post', $post)
+		// ->with('rankpvp', $rankpvp);
 
-		else:
+		// else:
 
 			$post = 1;
+			$rankpvp = array (
+				['char_name' => 'Teste', 'pvpkills' => 10],
+				['char_name' => 'Teste 3', 'pvpkills' => 15],
+				['char_name' => 'Teste 4', 'pvpkills' => 16],
+			);
 			return view('modules.welcome')
-			->with('post', $post);
+			->with('post', $post)
+			->with('rankpvp', $rankpvp);
 
-		endif;
+		// endif;
 
 	}
 
